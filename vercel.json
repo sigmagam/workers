@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/dl.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/dl.js"
-    }
-  ]
+  "name": "terabox-proxy-vercel",
+  "version": "1.0.0",
+  "description": "Proxy Stream Serverless untuk Vercel",
+  "main": "api/dl.js",
+  "dependencies": {
+    "axios": "^1.7.0"
+  }
 }
